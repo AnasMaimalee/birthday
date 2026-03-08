@@ -1,33 +1,39 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import FloatingHearts from './components/FloatingHearts';
-import LoveTimeline from './components/LoveTimeline';       // new: interactive story
+import LoveTimeline from './components/LoveTimeline';
 import VideoSection from './components/VideoSection';
 import CountDown from './components/CountDown';
-import FutureLetters from './components/FutureLetters';     // new: sealed future messages
-import GiftBox from './components/GiftBox';                 // new: unwrap surprise
+import FutureLetters from './components/FutureLetters';
+import GiftBox from './components/GiftBox';
 import LoveMessages from './components/LoveMessages';
 import MusicPlayer from './components/MusicPlayer';
 import Confetti from 'react-confetti';
+import SurpriseModal from './components/SurpriseModal';
 
 function App() {
   const [showConfetti, setShowConfetti] = useState(false);
-  const herName = "Sadiya"; // personalized!
+  const [showSurpriseModal, setShowSurpriseModal] = useState(false);
+  const herName = "Sadiya";
 
-  const triggerConfetti = () => {
-    if (!showConfetti) {  // one-time only
+  const handleSurpriseClick = () => {
+    // Trigger confetti first for dramatic effect
+    if (!showConfetti) {
       setShowConfetti(true);
-      setTimeout(() => setShowConfetti(false), 6000); // auto-hide after 6s
+      setTimeout(() => setShowConfetti(false), 6000);
     }
+
+    // Open the cake modal right after
+    setShowSurpriseModal(true);
   };
 
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-pink-50 via-purple-50 to-red-50 overflow-x-hidden">
-      {/* Music & Hearts always on top */}
+      {/* Always present elements */}
       <MusicPlayer />
       <FloatingHearts />
 
-      {/* Full-screen confetti with romantic colors */}
+      {/* Confetti explodes when surprise is triggered */}
       {showConfetti && (
         <Confetti
           width={window.innerWidth}
@@ -39,9 +45,10 @@ function App() {
         />
       )}
 
+      {/* Countdown */}
       <CountDown />
 
-      {/* Hero Section – bigger & more emotional */}
+      {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -54,32 +61,40 @@ function App() {
         <p className="text-2xl md:text-4xl text-gray-800 max-w-4xl font-medium leading-relaxed">
           To the girl who turns ordinary moments into magic, who makes my heart race every single day... today, the whole world celebrates YOU 💕
         </p>
+
+        {/* Surprise Button – now opens modal + confetti */}
         <motion.button
           whileHover={{ scale: 1.12, boxShadow: "0 20px 40px rgba(220, 38, 38, 0.4)" }}
           whileTap={{ scale: 0.95 }}
-          onClick={triggerConfetti}
+          onClick={handleSurpriseClick}
           className="mt-12 px-16 py-8 bg-gradient-to-r from-red-500 to-pink-500 text-white text-3xl font-bold rounded-full shadow-2xl hover:from-red-600 hover:to-pink-600 transition-all duration-300"
         >
-          Open Your Special Surprise 🎁✨
+          Open Your Special Surprise 🎂✨
         </motion.button>
       </motion.section>
 
-      {/* New: Interactive Love Timeline – the heart of the site */}
+      {/* Interactive Love Timeline */}
       <LoveTimeline />
 
-      {/* Videos – keep as is, but add some spacing */}
+      {/* Videos */}
       <VideoSection />
 
-      {/* New: Future Letters – emotional depth */}
+      {/* Future Letters */}
       <FutureLetters />
 
-      {/* New: Gift Box – interactive reveal */}
+      {/* Gift Box */}
       <GiftBox />
 
       {/* Love Messages */}
       <LoveMessages herName={herName} />
 
-      {/* Final Footer – more heartfelt */}
+      {/* Surprise Modal (cake with name) */}
+      <SurpriseModal
+        isOpen={showSurpriseModal}
+        onClose={() => setShowSurpriseModal(false)}
+      />
+
+      {/* Final Footer */}
       <motion.footer
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
