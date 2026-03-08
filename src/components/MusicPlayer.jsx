@@ -7,15 +7,17 @@ export default function MusicPlayer() {
   return (
     <>
       <ReactPlayer
-        url="/assets/music/music1.mp3"
-        playing={true}              // auto-start (muted → allowed)
+        src="/assets/music/music1.mp3"
+        playing={true}
         loop={true}
         muted={muted}
         volume={0.3}
         width={0}
         height={0}
         config={{ file: { forceAudio: true } }}
-        onError={(e) => console.error('Music error:', e)} // ← add this for debug
+        onReady={() => console.log('Music: Player is ready!')}
+        onPlay={() => console.log('Music: Started playing')}
+        onError={(e) => console.error('Music ERROR:', e)}
       />
 
       <button

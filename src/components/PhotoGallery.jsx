@@ -23,7 +23,7 @@ export default function PhotoGallery({ herName }) {
       className="py-20 px-4"
     >
       <h2 className="text-5xl font-bold text-center text-red-600 mb-12">
-        Moments with my {herName} 📸
+        Moments with my Sadiya  📸
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {photos.map((photo, i) => (

@@ -9,23 +9,22 @@ export default function VideoSection() {
       <div className="max-w-5xl mx-auto">
         <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-pink-200">
           <ReactPlayer
-            url="/assets/videos/video1.mp4"
+            src="/assets/videos/video1.mp4"
             controls={true}
             width="100%"
             height="auto"
-            playing={false}             // user clicks play (avoids policy blocks)
-            muted={false}               // sound when they play
+            playing={false}
+            muted={false}
             loop={false}
-            playsinline={true}          // crucial for mobile
+            playsinline={true}
             config={{
               file: {
-                attributes: {
-                  controlsList: 'nodownload', // hide download button
-                  disablePictureInPicture: false,
-                }
+                attributes: { controlsList: 'nodownload' }
               }
             }}
-            onError={(e) => console.error('Video error:', e)} // debug
+            onReady={() => console.log('Video: Player ready')}
+            onPlay={() => console.log('Video: User played')}
+            onError={(e) => console.error('Video ERROR:', e)}
             style={{ aspectRatio: '16/9' }}
           />
         </div>
