@@ -12,7 +12,7 @@ const milestones = [
     img: "/assets/photos/photo2.jpeg"
   },
   {
-    date: "When You Sent That Selfie",
+    date: "When You Sent That Picture In Black Dress",
     desc: "One random selfie changed everything. Your eyes sparkled with such innocence and depth, your smile felt like it was just for me. You're so naturally gorgeous — delicate yet powerful, quiet yet magnetic. I saved it and stared longer than I should admit. 🥹",
     img: "/assets/photos/photo3.jpeg"
   },
