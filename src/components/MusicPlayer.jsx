@@ -7,7 +7,7 @@ export default function MusicPlayer() {
   return (
     <>
       <ReactPlayer
-        src="/assets/music/music1.mp3"
+        src="/assets/music/sadiya.mp3"
         playing={true}
         loop={true}
         muted={muted}
