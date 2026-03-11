@@ -75,18 +75,37 @@ export default function LoveTimeline() {
             )}
 
             <motion.div
-              className="flex-1 bg-white/85 backdrop-blur-lg p-8 md:p-10 rounded-3xl shadow-xl border border-pink-100 hover:shadow-2xl transition-shadow duration-500"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.15 }}
-            >
-              <h3 className="text-3xl md:text-4xl font-bold text-red-600 mb-6 tracking-tight">
-                {item.date}
-              </h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed font-light">
-                {item.desc}
-              </p>
-            </motion.div>
+  className="relative flex-1 p-[3px] rounded-3xl overflow-hidden"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: index * 0.15 }}
+>
+  {/* Animated Border */}
+  <motion.div
+    className="absolute inset-0 rounded-3xl"
+    style={{
+      background:
+        "conic-gradient(from 0deg, #ff0080, #ff8c00, #ffd700, #00ffea, #8a2be2, #ff0080)",
+    }}
+    animate={{ rotate: 360 }}
+    transition={{
+      repeat: Infinity,
+      duration: 6,
+      ease: "linear",
+    }}
+  />
+
+  {/* Content */}
+  <div className="relative bg-white/90 backdrop-blur-lg p-8 md:p-10 rounded-3xl shadow-xl">
+    <h3 className="text-3xl md:text-4xl font-bold text-red-600 mb-6 tracking-tight">
+      {item.date}
+    </h3>
+
+    <p className="text-lg md:text-xl text-gray-800 leading-relaxed font-light">
+      {item.desc}
+    </p>
+  </div>
+</motion.div>
           </motion.div>
         ))}
       </div>
