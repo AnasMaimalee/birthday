@@ -1,19 +1,92 @@
 export const quizData = [
   {
-    question: "What’s your favorite food I make for you?",
-    options: ["Biryani", "Pizza", "Pasta", "Anything with extra love 😘"],
-    correct: 3,
+    field: "wedding_day",
+    type: "choice",
+    question: "Which day should our wedding be on? 💍",
+    options: ["Friday", "Saturday", "Sunday"],
   },
   {
-    question: "Our first movie date was?",
-    options: ["Avengers", "Titanic", "Your favorite rom-com", "I forgot but you looked stunning"],
-    correct: 2, // or whatever is true
+    field: "dinner_day",
+    type: "choice",
+    question: "Which day should be our weekly romantic dinner night?",
+    options: ["Thursday", "Friday", "Saturday"],
   },
-  // Add 8–15 personal questions about her likes, habits, inside jokes
-  // Last question example:
   {
-    question: "How much do I love you?",
-    options: ["A lot", "To the moon and back", "More than words", "Infinitely ❤️"],
-    correct: 3, // all can be correct or any
+    field: "favorite_food",
+    type: "choice",
+    question: "What food should I learn to cook perfectly after marriage?",
+    options: ["Biryani", "Pasta", "Pizza", "Anything you love"],
+  },
+  {
+    field: "dress_style",
+    type: "choice",
+    question: "What outfit do you want to see me wear when we meet in real life?",
+    options: [
+      "Black suit",
+      "Casual hoodie & jeans",
+      "Traditional outfit",
+      "Anything you think makes me handsome"
+    ],
+  },
+  {
+    field: "kids",
+    type: "number",
+    question: "How many kids should we have? 👶",
+    placeholder: "Enter number",
+  },
+  {
+    field: "weekend_activity",
+    type: "choice",
+    question: "Our favorite weekend activity should be?",
+    options: [
+      "Movie nights",
+      "Cooking together",
+      "Traveling",
+      "Just relaxing together"
+    ],
+  },
+  {
+    field: "honeymoon",
+    type: "choice",
+    question: "Where should we go for our honeymoon? ✈️",
+    options: [
+      "Maldives",
+      "Paris",
+      "Mountain retreat",
+      "Anywhere together"
+    ],
+  },
+  {
+    field: "anniversary_trip",
+    type: "choice",
+    question: "Where should we go for our first anniversary?",
+    options: [
+      "Beach vacation",
+      "Romantic city",
+      "Mountain getaway",
+      "Anywhere with you"
+    ],
+  },
+  {
+    field: "house_style",
+    type: "choice",
+    question: "What type of home should we live in?",
+    options: [
+      "Modern city apartment",
+      "Cozy countryside house",
+      "Beach house",
+      "A peaceful home full of love"
+    ],
+  },
+  {
+    field: "date_night",
+    type: "choice",
+    question: "What should our perfect date night look like?",
+    options: [
+      "Candlelight dinner",
+      "Watching movies",
+      "Late night walks",
+      "Just talking for hours"
+    ],
   }
 ];

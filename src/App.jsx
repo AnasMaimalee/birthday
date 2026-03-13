@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Confetti from "react-confetti";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import LoveQuiz from "./components/LoveQuiz";
 import FloatingHearts from "./components/FloatingHearts";
 import LoveTimeline from "./components/LoveTimeline";
 import VideoSection from "./components/VideoSection";
@@ -12,7 +14,12 @@ import LoveMessages from "./components/LoveMessages";
 import MusicPlayer from "./components/MusicPlayer";
 import SurpriseModal from "./components/SurpriseModal";
 
-function App() {
+import ResponsesPage from "./pages/ResponsesPage";
+
+/* -----------------------------
+   MAIN BIRTHDAY PAGE COMPONENT
+--------------------------------*/
+function HomePage() {
   const herName = "My Gorgeous and Lovely Sweetheart 💕 Halimatussadiya";
 
   const [showConfetti, setShowConfetti] = useState(false);
@@ -23,7 +30,6 @@ function App() {
     height: window.innerHeight,
   });
 
-  // Handle screen resize (for confetti)
   useEffect(() => {
     const resizeHandler = () => {
       setWindowSize({
@@ -33,7 +39,6 @@ function App() {
     };
 
     window.addEventListener("resize", resizeHandler);
-
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
@@ -49,7 +54,7 @@ function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-gradient-to-b from-pink-50 via-purple-50 to-red-50">
 
-      {/* Background elements */}
+      {/* Background */}
       <MusicPlayer />
       <FloatingHearts />
 
@@ -72,7 +77,7 @@ function App() {
         />
       )}
 
-      {/* Countdown Section */}
+      {/* Countdown */}
       <CountDown />
 
       {/* Hero Section */}
@@ -82,7 +87,7 @@ function App() {
         transition={{ duration: 1.4, ease: "easeOut" }}
         className="min-h-screen flex flex-col items-center justify-center text-center px-6 md:px-12"
       >
-        <h1 className="text-2xl md:text-9xl  font-extrabold text-red-600 mb-10 drop-shadow-xl animate-pulse">
+        <h1 className="text-2xl md:text-9xl font-extrabold text-red-600 mb-10 drop-shadow-xl animate-pulse">
           Happy Birthday ❤️
           <span className="block text-red-700">{herName}</span>
         </h1>
@@ -93,7 +98,6 @@ function App() {
           today the whole world celebrates YOU 💕
         </p>
 
-        {/* Surprise Button */}
         <motion.button
           whileHover={{
             scale: 1.12,
@@ -107,20 +111,23 @@ function App() {
         </motion.button>
       </motion.section>
 
-      {/* Love Timeline */}
+      {/* Timeline */}
       <LoveTimeline />
 
-      {/* Video Memories */}
+      {/* Videos */}
       <VideoSection />
 
       {/* Future Letters */}
       <FutureLetters />
 
-      {/* Gift Box */}
+      {/* Gift */}
       <GiftBox />
 
       {/* Love Messages */}
       <LoveMessages herName={herName} />
+
+      {/* Quiz */}
+      <LoveQuiz />
 
       {/* Surprise Modal */}
       <SurpriseModal
@@ -157,7 +164,29 @@ function App() {
           <div className="h-1 w-40 bg-gradient-to-r from-pink-400 to-red-500 rounded-full"></div>
         </div>
       </motion.footer>
+
     </div>
+  );
+}
+
+/* -----------------------------
+   ROUTER
+--------------------------------*/
+function App() {
+  return (
+    <BrowserRouter>
+
+      <Routes>
+
+        {/* Main Birthday Site */}
+        <Route path="/" element={<HomePage />} />
+
+        {/* Hidden responses page */}
+        <Route path="/responses" element={<ResponsesPage />} />
+
+      </Routes>
+
+    </BrowserRouter>
   );
 }
 
