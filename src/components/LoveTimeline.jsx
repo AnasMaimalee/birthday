@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const milestones = [
   {
     date: "The Day We First Connected",
-    desc: "My friend linked us, and the moment I saw your photo... time stopped. Your smile lit up my screen like pure sunshine, your eyes held a kindness that pulled me in instantly. Even from that first picture, I knew you were someone extraordinarily special. ✨❤️",
+    desc: "My friend yaya Buhari linked us, and the moment I saw your photo... time stopped. Your smile lit up my screen like pure sunshine, your eyes held a kindness that pulled me in instantly. Even from that first picture, I knew you were someone extraordinarily special. ✨❤️",
     img: "/assets/photos/photo1.jpeg"
   },
   {
@@ -46,7 +46,7 @@ const milestones = [
 export default function LoveTimeline() {
   return (
     <section className="py-24 px-6 bg-gradient-to-br from-purple-50 to-pink-50">
-      <h2 className="text-5xl md:text-7xl font-extrabold text-center text-red-600 mb-16 tracking-wide animate-pulse">
+      <h2 className="text-2xl md:text-7xl font-extrabold text-center text-red-600 mb-16 tracking-wide animate-pulse">
         Our Beautiful Online Love Story 💫
       </h2>
       <div className="max-w-5xl mx-auto space-y-20 md:space-y-24">
@@ -63,7 +63,7 @@ export default function LoveTimeline() {
           >
             {item.img && (
               <motion.div
-                className="w-72 h-72 md:w-80 md:h-80 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl border-4 border-pink-200 hover:border-pink-400 transition-all duration-500"
+                className="w-72 h-72 md:w-80 md:h-80 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl border-4 border-pink-700 hover:border-pink-400 transition-all duration-500"
                 whileHover={{ scale: 1.05, rotate: 2 }}
               >
                 <img

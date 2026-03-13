@@ -22,7 +22,7 @@ export default function FutureLetters() {
 
   return (
     <section className="py-24 px-6 bg-gradient-to-t from-red-50 to-white">
-      <h2 className="text-5xl md:text-7xl font-bold text-center text-pink-700 mb-16">
+      <h2 className="text-2xl md:text-7xl font-bold text-center text-pink-700 mb-16">
         Letters I'll Write to You in the Future 💌✨
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

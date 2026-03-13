@@ -33,7 +33,7 @@ export default function VideoSection() {
 
   return (
     <section className="py-24 px-6 bg-gradient-to-br from-pink-50 to-red-50">
-      <h2 className="text-5xl md:text-6xl font-extrabold text-center text-red-600 mb-16 tracking-tight">
+      <h2 className="text-2xl md:text-6xl font-extrabold text-center text-red-600 mb-16 tracking-tight">
         Videos That Make My Heart Race ❤️ 🎥
       </h2>
 

@@ -13,7 +13,7 @@ import MusicPlayer from "./components/MusicPlayer";
 import SurpriseModal from "./components/SurpriseModal";
 
 function App() {
-  const herName = "Sadiya";
+  const herName = "My Gorgeous and Lovely Sweetheart 💕 Halimatussadiya";
 
   const [showConfetti, setShowConfetti] = useState(false);
   const [showSurpriseModal, setShowSurpriseModal] = useState(false);
@@ -82,7 +82,7 @@ function App() {
         transition={{ duration: 1.4, ease: "easeOut" }}
         className="min-h-screen flex flex-col items-center justify-center text-center px-6 md:px-12"
       >
-        <h1 className="text-6xl md:text-9xl font-extrabold text-red-600 mb-10 drop-shadow-xl animate-pulse">
+        <h1 className="text-2xl md:text-9xl  font-extrabold text-red-600 mb-10 drop-shadow-xl animate-pulse">
           Happy Birthday ❤️
           <span className="block text-red-700">{herName}</span>
         </h1>
