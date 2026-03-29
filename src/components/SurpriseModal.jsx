@@ -33,7 +33,7 @@ export default function SurpriseModal({ isOpen, onClose }) {
             {/* Cake Image – centered, with nice frame */}
             <div className="relative mx-auto w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-8 border-pink-200/80">
               <img
-                src="/assets/photos/cake.jpg"
+                src="/assets/photos/cake.png"
                 alt="Birthday Cake for Sadiya"
                 className="w-full h-full object-cover"
               />
