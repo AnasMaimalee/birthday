@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Confetti from "react-confetti";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import LoveQuiz from "./components/LoveQuiz";
 import FloatingHearts from "./components/FloatingHearts";
 import LoveTimeline from "./components/LoveTimeline";
 import VideoSection from "./components/VideoSection";
@@ -126,8 +125,7 @@ function HomePage() {
       {/* Love Messages */}
       <LoveMessages herName={herName} />
 
-      {/* Quiz */}
-      <LoveQuiz />
+     
 
       {/* Surprise Modal */}
       <SurpriseModal

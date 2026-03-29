@@ -115,13 +115,13 @@ export default function ResponsesPage() {
                 </span>
               </div>
 
-              {/* Answers Grid */}
+              {/* All 13 Answers - Exact Match to quizData */}
               <div className="grid grid-cols-1 gap-6 text-gray-800">
                 <div className="flex items-start gap-4">
                   <span className="text-3xl flex-shrink-0">💍</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Wedding Day:</p>
-                    <p className="text-base">{r.wedding_day || "Not answered"}</p>
+                    <p>{r.wedding_day || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -129,7 +129,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">🍽️</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Romantic Dinner Night:</p>
-                    <p className="text-base">{r.dinner_day || "Not answered"}</p>
+                    <p>{r.dinner_day || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -137,7 +137,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">🍲</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Favorite Food to Cook:</p>
-                    <p className="text-base">{r.favorite_food || "Not answered"}</p>
+                    <p>{r.favorite_food || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -145,7 +145,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">👔</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Outfit When We Meet:</p>
-                    <p className="text-base">{r.dress_style || "Not answered"}</p>
+                    <p>{r.dress_style || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -153,7 +153,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">🎨</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Favorite Color:</p>
-                    <p className="text-base">{r.favorite_color || "Not answered"}</p>
+                    <p>{r.favorite_color || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -161,7 +161,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">👶</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Number of Kids:</p>
-                    <p className="text-base">{r.kids ?? "Not answered"}</p>
+                    <p>{r.kids ?? "Not answered"}</p>
                   </div>
                 </div>
 
@@ -169,7 +169,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">🌙</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Weekend Activity:</p>
-                    <p className="text-base">{r.weekend_activity || "Not answered"}</p>
+                    <p>{r.weekend_activity || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -177,7 +177,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">🏰</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">First Kano Visit:</p>
-                    <p className="text-base">{r.kano_visit || "Not answered"}</p>
+                    <p>{r.kano_visit || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -185,7 +185,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">🌳</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Romantic Park/Quiet Place:</p>
-                    <p className="text-base">{r.park_visit || "Not answered"}</p>
+                    <p>{r.park_visit || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -193,7 +193,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">🌴</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Honeymoon Destination:</p>
-                    <p className="text-base">{r.honeymoon || "Not answered"}</p>
+                    <p>{r.honeymoon || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -201,7 +201,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">🎉</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">First Anniversary Trip:</p>
-                    <p className="text-base">{r.anniversary_trip || "Not answered"}</p>
+                    <p>{r.anniversary_trip || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -209,7 +209,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">🏡</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Type of Home:</p>
-                    <p className="text-base">{r.house_style || "Not answered"}</p>
+                    <p>{r.house_style || "Not answered"}</p>
                   </div>
                 </div>
 
@@ -217,7 +217,7 @@ export default function ResponsesPage() {
                   <span className="text-3xl flex-shrink-0">🌙</span>
                   <div className="flex-1">
                     <p className="font-semibold text-pink-700 text-lg">Perfect Date Night:</p>
-                    <p className="text-base">{r.date_night || "Not answered"}</p>
+                    <p>{r.date_night || "Not answered"}</p>
                   </div>
                 </div>
               </div>
