@@ -5,7 +5,7 @@ const letters = [
   {
     title: "On Our First Anniversary",
     unlockDate: new Date('2026-10-15'), // example
-    content: "My love, one year in and I still get butterflies every time you smile...",
+    content: "My love, one month in and I still get butterflies every time you smile...",
   },
   {
     title: "When We Have Our Dream Home",
