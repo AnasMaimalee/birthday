@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FloatingHearts from "./components/FloatingHearts";
 import LoveTimeline from "./components/LoveTimeline";
 import VideoSection from "./components/VideoSection";
-import CountDown from "./components/CountDown";
 import FutureLetters from "./components/FutureLetters";
 import GiftBox from "./components/GiftBox";
 import LoveMessages from "./components/LoveMessages";
@@ -76,9 +75,7 @@ function HomePage() {
         />
       )}
 
-      {/* Countdown */}
-      <CountDown />
-
+      
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: 120 }}
