@@ -287,7 +287,7 @@ export default function LoveQuiz() {
                 <motion.h2
                   className="text-4xl md:text-5xl font-extrabold text-red-600 mb-6"
                 >
-                  Thank You, My Beautiful Sadiya!
+                  Thank You, My Beautiful Sweetheart!
                 </motion.h2>
 
                 <motion.p

@@ -56,7 +56,7 @@ export default function ResponsesPage() {
         transition={{ duration: 1, ease: "easeOut" }}
         className="text-5xl md:text-7xl font-extrabold text-center text-red-600 mb-16 tracking-tight drop-shadow-lg"
       >
-        Sadiya's Beautiful Dreams 💌✨
+       Sweetheart Sadiya's Beautiful Dreams 💌✨
       </motion.h1>
 
       {loading && (

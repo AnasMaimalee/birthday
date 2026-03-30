@@ -38,7 +38,7 @@ const milestones = [
   },
   {
     date: "Yau – Ranar Haihuwarki",
-    desc: "Barka da ranar haihuwa, kyakkyawar Sadiya ta. Daga hoton farko zuwa kowanne da ya biyo baya, kina daukar min numfashi. Kyawunki — na waje da na ciki — yana kara burgewa da kowanne lokaci. Ko da muna nesa, kina kusa da zuciyata sosai. Ina sonki fiye da yadda kalmomi za su iya bayyana. Ina fatan ranar da za mu hadu fuska da fuska, in fada miki wannan ina kallon wadannan kyawawan idanunki. ❤️🎂✨",
+    desc: "Barka da ranar haihuwa, kyakkyawar Sweetheart ta. Daga hoton farko zuwa kowanne da ya biyo baya, kina daukar min numfashi. Kyawunki — na waje da na ciki — yana kara burgewa da kowanne lokaci. Ko da muna nesa, kina kusa da zuciyata sosai. Ina sonki fiye da yadda kalmomi za su iya bayyana. Ina fatan ranar da za mu hadu fuska da fuska, in fada miki wannan ina kallon wadannan kyawawan idanunki. ❤️🎂✨",
     img: "/assets/photos/photo8.jpeg"
   }
 ];
@@ -116,10 +116,10 @@ export default function LoveTimeline() {
         transition={{ duration: 1.5, delay: 1 }}
         className="text-center mt-20 text-2xl md:text-3xl italic text-gray-700 font-medium"
       >
-        Distance can't dim your light, Sadiya.  
-        Every photo, every word, every heartbeat brings me closer to you.  
-        I can't wait for the day I finally see that beauty in person.  
-        Until then — and forever — you're my everything. 🥹💞
+        Ko da muna nesa, haskenki baya dusashewa, Sweetheart Dita.  
+        Kowane hoto, kowace kalma, kowane bugun zuciyata yana kara kusantar da ni gare ki.  
+        Ina marmarin ranar da zan gan ki a zahiri, in shaida wannan kyawunki da idona.  
+        Har zuwa lokacin — da har abada — ke ce rayuwata da komai na 🥹💞
       </motion.p>
     </section>
   );

@@ -34,7 +34,7 @@ export default function SurpriseModal({ isOpen, onClose }) {
             <div className="relative mx-auto w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-8 border-pink-200/80">
               <img
                 src="/assets/photos/cake.png"
-                alt="Birthday Cake for Sadiya"
+                alt="Birthday Cake for Sweetheart"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -46,8 +46,8 @@ export default function SurpriseModal({ isOpen, onClose }) {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="mt-10 text-xl md:text-2xl text-red-700 font-medium italic leading-relaxed"
             >
-              Happy Birthday, my beautiful Sadiya...  
-              This cake is sweet, but nowhere near as sweet as you 💕🎂
+             Barka da ranar haihuwa, kyakkyawar Sweetheart ta...  
+             Wannan cake yana da dadi, amma babu abin da ya kai dadin ki a zuciyata 💕🎂
             </motion.p>
 
             {/* Optional floating hearts around the modal */}
