@@ -88,10 +88,10 @@ function HomePage() {
           <span className="block text-red-700">{herName}</span>
         </h1>
 
-        <p className="text-2xl md:text-4xl text-gray-800 max-w-4xl font-medium leading-relaxed">
-          To the girl who turns ordinary moments into magic,
-          who makes my heart race every single day...
-          today the whole world celebrates YOU 💕
+       <p className="text-2xl md:text-4xl text-gray-800 max-w-4xl font-medium leading-relaxed">
+          Ga sarauniyata, wacce ke mayar da rayuwata ta zama cike da sihiri,
+          wacce ke sa zuciyata bugawa da sauri a kowace rana...
+          yau duk duniya tana murnar KI 💕
         </p>
 
         <motion.button
