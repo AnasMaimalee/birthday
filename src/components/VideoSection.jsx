@@ -3,16 +3,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ReactPlayer from 'react-player';
 
 const videos = [
-  {
-    url: "/assets/videos/video1.mp4",
-    title: "Our First Sweet Message",
-    description: "The moment I knew you were the one... ❤️",
-  },
-  {
-    url: "/assets/videos/video2.mp4",
-    title: "Your Smile That Stops Time",
-    description: "Every time I watch this, my heart races all over again.",
-  },
+ {
+  url: "/assets/videos/video1.mp4",
+  title: "Sakonmu Na Farko Mai Dadi ❤️",
+  description: "Lokacin da na gane cewa ke ce zabina na har abada... ❤️",
+},
+{
+  url: "/assets/videos/video2.mp4",
+  title: "Murmushinki Mai Tsayar Da Lokaci 😍",
+  description: "Duk lokacin da na kalli wannan, zuciyata tana sake bugawa da sauri kamar farko.",
+}
 
 ];
 

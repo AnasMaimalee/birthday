@@ -3,16 +3,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const letters = [
   {
-    title: "On Our First Anniversary",
-    unlockDate: new Date('2026-10-15'), // example
-    content: "My love, one month in and I still get butterflies every time you smile...",
+    title: "A Ranar Cikar Shekararmu Ta Farko ❤️",
+    unlockDate: new Date('2026-10-15'),
+    content: "Masoyiyata, wata daya kacal amma zuciyata ta riga ta saba da ke. Har yanzu ina jin bugun zuciya kamar na farko duk lokacin da kika yi murmushi. Kin zama farin cikina, nutsuwata, da dalilin da yasa nake jin rayuwa ta fi kyau. Wannan farkon labarinmu ne… kuma ina fatan zai kasance har abada. 💖",
   },
   {
-    title: "When We Have Our Dream Home",
+    title: "Lokacin Da Muka Mallaki Gidan Mafarkinmu 🏡✨",
     unlockDate: new Date('2028-01-01'),
-    content: "We'll have that cozy corner with books, plants, and your laugh echoing everywhere...",
+    content: "Zamu zauna tare a gidanmu mai dumi, cike da soyayya da dariya. Akwai wani kusurwa na littattafai, furanni masu kyau, da dariyarki tana cika ko’ina. Kullum zan kalle ki in gode wa Allah da ya bani ke. Wannan gida ba gini bane kawai… gida ne saboda ke. ❤️",
   },
-  // Add 3–5 more
+  {
+    title: "Lokacin Da Muka Tsofanta Tare 👵🏽👴🏽",
+    unlockDate: new Date('2050-01-01'),
+    content: "Ko da shekaru sun ja, zan kasance ina kallonki kamar ranar farko. Murmushinki zai ci gaba da haskaka zuciyata. Zamu tuna duk abubuwan da muka wuce tare mu yi dariya. Soyayyata gare ki ba zata taba tsufa ba — zata kara zurfi ne kawai. ❤️✨",
+  }
 ];
 
 export default function FutureLetters() {

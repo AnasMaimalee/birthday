@@ -4,27 +4,25 @@ import Confetti from "react-confetti";
 
 export default function GiftBox() {
   const [stage, setStage] = useState(0);
-
-  const layers = [
-    {
-      title: "First Layer",
-      message: "A warm hug from me right now 🤗",
-    },
-    {
-      title: "Second Layer",
-      message: "A million kisses flying your way 💋",
-    },
-    {
-      title: "Third Layer",
-      message: "Every heartbeat of mine belongs to you ❤️",
-    },
-    {
-      title: "Final Surprise",
-      message:
-        "Forever yours. I promise to always love you, protect you, and stand beside you no matter what 💍",
-    },
-  ];
-
+const layers = [
+  {
+    title: "Mataki na Farko 💕",
+    message: "Wata runguma mai dumi daga gare ni a wannan lokacin 🤗",
+  },
+  {
+    title: "Mataki na Biyu 💋",
+    message: "Sumba miliyan daya ina turo miki yanzu 💋",
+  },
+  {
+    title: "Mataki na Uku ❤️",
+    message: "Kowane bugun zuciyata naki ne ke kadai ❤️",
+  },
+  {
+    title: "Babban Mamaki 💍✨",
+    message:
+      "Ni naki ne har abada. Ina alkawarin zan ci gaba da sonki, kula da ke, da tsayawa a gefenki a kowane hali 💍❤️",
+  },
+];
   const nextStage = () => {
     if (stage < layers.length) setStage(stage + 1);
   };

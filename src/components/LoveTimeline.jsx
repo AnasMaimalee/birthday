@@ -2,43 +2,43 @@ import { motion } from 'framer-motion';
 
 const milestones = [
   {
-    date: "The Day We First Connected",
-    desc: "My friend yaya Buhari linked us, and the moment I saw your photo... time stopped. Your smile lit up my screen like pure sunshine, your eyes held a kindness that pulled me in instantly. Even from that first picture, I knew you were someone extraordinarily special. ✨❤️",
+    date: "Ranar Da Muka Fara Haduwa",
+    desc: "Abokina Yaya Buhari ne ya hada mu, kuma daga lokacin da na ga hotonki... lokaci ya tsaya cak. Murmushinki ya haskaka wayata kamar hasken rana, idanunki suna dauke da wani irin kirki da ya jawo ni nan take. Tun daga wannan hoton na farko, na san kina da matukar muhimmanci a rayuwata. ✨❤️",
     img: "/assets/photos/photo1.jpeg"
   },
   {
-    date: "Our First Long Chat",
-    desc: "Words started flowing endlessly... your messages were so warm, so thoughtful. Every time a new photo popped up, I was stunned again by how breathtakingly beautiful you are — your soft features, that gentle glow, your effortless charm. You made my days brighter without even trying.",
+    date: "Hirar Mu Ta Farko Mai Tsawo",
+    desc: "Magana ta fara gudana ba tare da tsayawa ba... sakonninki suna da dumi da kulawa sosai. Duk lokacin da wani sabon hoto ya bayyana, nakan sake mamakin yadda kike da matukar kyau — kyawunki na halitta, nutsuwarki, da saukin halinki. Kina sanya ranata ta yi haske ba tare da kin yi kokari ba.",
     img: "/assets/photos/photo2.jpeg"
   },
   {
-    date: "When You Sent That Picture In Black Dress",
-    desc: "One random selfie changed everything. Your eyes sparkled with such innocence and depth, your smile felt like it was just for me. You're so naturally gorgeous — delicate yet powerful, quiet yet magnetic. I saved it and stared longer than I should admit. 🥹",
+    date: "Lokacin Da Kika Aika Hotonki Da Riga Baki",
+    desc: "Wani hoton selfie daya ya canza komai. Idanunki suna kyalli da tsabta da zurfi, murmushinki kamar nawa ne ni kadai. Kina da kyau na musamman — mai sauki amma mai karfi, shiru amma mai jan hankali. Na adana hoton kuma na dade ina kallonsa fiye da yadda ya kamata. 🥹",
     img: "/assets/photos/photo3.jpeg"
   },
   {
-    date: "Late-Night Talks",
-    desc: "We stayed up talking about dreams, fears, little things... and every photo you shared made my heart race. Your beauty isn't just in your face — it's in your soul shining through every picture. Graceful, radiant, and so perfectly you. I fell harder with every message.",
+    date: "Hirarrakin Dare",
+    desc: "Muna zama muna hira har dare — game da buri, tsoro, da kananan abubuwa... kuma duk hoton da kika turo yana kara sa zuciyata bugawa da sauri. Kyawunki ba a fuska kadai yake ba — yana fitowa daga zuciyarki cikin kowane hoto. Kina da kyau, kina haske, kuma kina da kamala a yadda kike.",
     img: "/assets/photos/photo4.jpeg"
   },
   {
-    date: "Your Voice Notes",
-    desc: "Hearing your voice for the first time felt like magic. And paired with your photos — that soft laugh, those expressive eyes — you're even more mesmerizing than I imagined. Your beauty is timeless, gentle, and absolutely captivating.",
+    date: "Muryarki Ta Farko",
+    desc: "Jin muryarki a karo na farko kamar sihiri ne. Idan aka hada da hotunanki — dariyarki mai laushi da idanunki masu magana — kin fi yadda na taba tunani kyau. Kyawunki mai nutsuwa ne kuma mai jan hankali sosai.",
     img: "/assets/photos/photo5.jpeg"
   },
   {
-    date: "When You Shared Your Favorite Picture",
-    desc: "You sent that one photo where the light caught your face just right... I couldn't breathe. Your elegance, your warmth, the way your smile lights up everything around it — you're the definition of breathtaking. Every detail of you feels like art.",
+    date: "Lokacin Da Kika Turo Hotonki Da Kafi So",
+    desc: "Kin turo wannan hoton da haske ya sauka a fuskar ki daidai... na kasa numfashi. Kyawunki, dumin zuciyarki, da yadda murmushinki ke haskaka komai — kina da matukar kyau sosai. Kowane bangare na ke kamar fasaha ne.",
     img: "/assets/photos/photo6.jpeg"
   },
   {
-    date: "Every Time You Message Me",
-    desc: "Your texts arrive and my heart jumps. Even without seeing you live, your photos already feel like home — your eyes full of kindness, your beauty so pure and striking. You're the most gorgeous person I've ever known, and I fall for you more every day.",
+    date: "Kowanne Lokaci Da Kike Turo Sako",
+    desc: "Sakonninki suna zuwa kuma zuciyata tana tsalle. Ko ba tare da na gan ki kai tsaye ba, hotunanki sun riga sun zama gida a zuciyata — idanunki cike da alheri, kyawunki mai tsabta. Ke ce mafi kyawun mutum da na taba sani, kuma kullum ina kara sonki.",
     img: "/assets/photos/photo7.jpeg"
   },
   {
-    date: "Today – Your Birthday",
-    desc: "Happy Birthday, my stunning Sadiya. From the very first photo to every one since, you've taken my breath away. Your beauty — inside and out — grows more enchanting with every shared moment. Even across the distance, you feel so close, so real, so irreplaceable. I love you more than words can ever say. Here's to the day we finally meet in person and I get to tell you this while looking into those beautiful eyes. ❤️🎂✨",
+    date: "Yau – Ranar Haihuwarki",
+    desc: "Barka da ranar haihuwa, kyakkyawar Sadiya ta. Daga hoton farko zuwa kowanne da ya biyo baya, kina daukar min numfashi. Kyawunki — na waje da na ciki — yana kara burgewa da kowanne lokaci. Ko da muna nesa, kina kusa da zuciyata sosai. Ina sonki fiye da yadda kalmomi za su iya bayyana. Ina fatan ranar da za mu hadu fuska da fuska, in fada miki wannan ina kallon wadannan kyawawan idanunki. ❤️🎂✨",
     img: "/assets/photos/photo8.jpeg"
   }
 ];

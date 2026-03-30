@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 
 export default function LoveMessages({ herName }) {
   const messages = [
-    `Dear ${herName}, from the moment you walked into my life, everything changed in the most beautiful way.`,
-    "You turned ordinary days into magical memories, and every moment with you feels like a blessing.",
-    "I love your smile, your laugh, the way your eyes light up when you’re happy.",
-    "I love the little things about you — the way you talk, the way you care, the way you make everything feel safe.",
-    "Being with you makes the world feel softer, warmer, and brighter.",
-    "Through every joy, every challenge, and every dream, I want to be right beside you.",
-    "You are not just someone I love — you are my peace, my happiness, and my home.",
+    `Masoyiyata ${herName}, tun daga lokacin da kika shigo rayuwata, komai ya canza cikin mafi kyawun hanya.`,
+    "Kin mayar da ranakun yau da kullum zuwa abubuwan tunawa masu ban mamaki, kuma kowane lokaci tare da ke yana zama albarka.",
+    "Ina son murmushinki, dariyarki, da yadda idanuwanki ke haskawa idan kina farin ciki.",
+    "Ina son kananan abubuwa game da ke — yadda kike magana, yadda kike kulawa, da yadda kike sa komai ya zama cikin natsuwa.",
+    "Kasancewa tare da ke yana sa duniya ta zama mai laushi, dumi, kuma mai haske.",
+    "A cikin kowace farin ciki, kowace kalubale, da kowanne buri, ina son kasancewa a gefenki.",
+    "Ba kawai kina daga cikin wadanda nake so ba — ke ce nutsuwata, farin cikina, da gidana.",
   ];
 
   return (
